@@ -11,7 +11,7 @@ if(game.nextPlayer.pieces[0]){
 game.currentPlayer.attack(game.currentPlayer.pieces[0],game.nextPlayer.pieces[0]);}
 
 game.endTurn();
-turn++;
+
 
 }while(true);
 

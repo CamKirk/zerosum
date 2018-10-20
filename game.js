@@ -127,12 +127,12 @@ game.Piece = function (piece, player) {
 
 };
 
-game.Piece.prototype.death = function (player) {
+game.Piece.prototype.death = function () {
 	console.log(`${this.name} is dying`);
 
-	let pieceLocation = player.pieces.indexOf(this);
-	player.pieces.splice(pieceLocation, 1)
-	player.resources -= this.resourceCost;
+	let pieceLocation = this.owner.pieces.indexOf(this);
+	this.owner.pieces.splice(pieceLocation, 1)
+	this.owner.resources -= this.resourceCost;
 }
 
 
