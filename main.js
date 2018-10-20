@@ -1,6 +1,4 @@
-var game = require('./game.js');
-// console.log(game);
-let turn = 0;
+let game = require('./game.js');
 game.generatePlayer("gus");
 game.generatePlayer("abraham");
 game.startGame();
@@ -14,6 +12,9 @@ game.currentPlayer.attack(game.currentPlayer.pieces[0],game.nextPlayer.pieces[0]
 
 game.endTurn();
 turn++;
-console.log(game.playerArray);
-}while(turn<10);
+
+}while(true);
+
+
+
 
